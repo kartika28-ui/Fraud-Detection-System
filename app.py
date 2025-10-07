@@ -34,7 +34,7 @@ col1, col2 = st.columns(2)
 with col1:
     type_input = st.selectbox(
         "Transaction Type",
-        ["SELECT", "CASH-IN", "CASH-OUT", "DEBIT", "PAYMENT", "TRANSFER"]
+        ["CASH-IN", "CASH-OUT", "DEBIT", "PAYMENT", "TRANSFER"]
     )
     amount = st.number_input("Transaction Amount", min_value=0.0, step=100.0)
     oldbalanceOrg = st.number_input("Sender's Old Balance", min_value=0.0, step=100.0)
