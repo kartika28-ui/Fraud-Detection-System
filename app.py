@@ -29,6 +29,7 @@ st.markdown(
     div.stButton > button:hover {
         background-color: #fff !important;
         color: #646f58 !important;
+        border: 1px solid #646f58;
     }
     </style>
     """,
