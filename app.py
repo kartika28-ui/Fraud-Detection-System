@@ -48,10 +48,10 @@ log_amount = math.log(amount + 1)
 
 type_map = {"CASH-IN": 0, "CASH-OUT": 1, "DEBIT": 2, "PAYMENT": 3, "TRANSFER": 4}
 type_encoded = type_map[type_input]
-dest_is_customer = 1 if dest_is_customer == "Yes" else 0
+dest_is_customer = 1 
 
 step = 1
-dest_is_customer = 1
+
 
 input_data = np.array([[
     step,               
