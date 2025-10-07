@@ -19,9 +19,6 @@ st.set_page_config(page_title="Fraud Detection System", page_icon="💳", layout
 st.markdown(
     """
     <style>
-    .stApp {
-        background-color: #f2e8d9; 
-    }
     div.stButton > button {
         background-color: #646f58;  
         color: white;                                     
