@@ -53,12 +53,15 @@ amount_to_oldDest = amount / (oldbalanceDest + 1)
 
 log_amount = math.log(amount + 1)
 
-# Encode categorical and binary values
+
 type_map = {"CASH-IN": 0, "CASH-OUT": 1, "DEBIT": 2, "PAYMENT": 3, "TRANSFER": 4}
 type_encoded = type_map[type_input]
 dest_is_customer = 1 if dest_is_customer == "Yes" else 0
 
+step = 1
+
 input_data = np.array([[
+    step,               
     type_encoded,
     amount,
     oldbalanceOrg,
@@ -69,8 +72,8 @@ input_data = np.array([[
     DestBalanceChange,
     amount_to_oldOrig,
     amount_to_oldDest,
-    log_amount,
-    dest_is_customer
+    dest_is_customer,
+    log_amount
 ]])
 
 if st.button("Predict Fraud Status"):
