@@ -19,7 +19,7 @@ st.set_page_config(page_title="Fraud Detection System", page_icon="💳", layout
 st.markdown(
     """
     <style>
-    .css-18e3th9 {
+    .stApp {
         background-color: #f9f2bd; 
     }
     </style>
