@@ -60,13 +60,19 @@ dest_is_customer = 1
 step = 1
 balance_mismatch = 0
 
-# CASH-IN where sender lost money (should not happen)
 if type_input == "CASH-IN" and newbalanceOrig < oldbalanceOrg:
     balance_mismatch = 1
-# CASH-OUT where sender gained money (should not happen)
+
 elif type_input == "CASH-OUT" and newbalanceOrig > oldbalanceOrg:
     balance_mismatch = 1
-# Extremely high transaction (example threshold)
+
+elif type_input in ["DEBIT", "PAYMENT"] and newbalanceOrig != oldbalanceOrg - amount:
+    balance_mismatch = 1
+
+elif type_input == "TRANSFER":
+    if newbalanceOrig != oldbalanceOrg - amount or newbalanceDest != oldbalanceDest + amount:
+        balance_mismatch = 1
+
 elif amount > 1e6:
     balance_mismatch = 1
 
