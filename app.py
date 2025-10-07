@@ -22,6 +22,14 @@ st.markdown(
     .stApp {
         background-color: #f2e8d9; 
     }
+    div.stButton > button {
+        background-color: #646f58;  
+        color: white;                                     
+    }
+    div.stButton > button:hover {
+        background-color: #fff;
+        color: #646f58;
+    }
     </style>
     """,
     unsafe_allow_html=True
