@@ -45,8 +45,7 @@ Fraud-Detection-System
 - `fraud_detection.pkl`              – Trained Random Forest ML model  
 - `requirements.txt`                 – Project dependencies  
 - `README.md`                         – Project documentation  
-- `data/` (optional)                  – Sample dataset and feature engineering scripts  
-- `notebooks/` (optional)             – Jupyter notebooks for model experimentation and analysis  
+- `Power BI Dashboard`                - Power BI Dashboard
 
 
 ## References & Acknowledgments
