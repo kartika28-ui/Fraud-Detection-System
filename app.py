@@ -16,6 +16,17 @@ import os
 
 st.set_page_config(page_title="Fraud Detection System", page_icon="💳", layout="centered")
 
+st.markdown(
+    """
+    <style>
+    .css-18e3th9 {
+        background-color: #f9f2bd; 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 if not os.path.exists("fraud_detection.pkl"):
     st.error("Model file 'fraud_detection.pkl' not found! Please ensure it's uploaded to your repository.")
     st.stop()
