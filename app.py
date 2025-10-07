@@ -12,7 +12,9 @@ import numpy as np
 import joblib
 import math
 import os
-st.write(f"Python version: {sys.version}")
+
+st.set_page_config(page_title="Fraud Detection System", page_icon="💳", layout="centered")
+
 if not os.path.exists("fraud_detection.pkl"):
     st.error("Model file 'fraud_detection.pkl' not found! Please ensure it's uploaded to your repository.")
     st.stop()
@@ -22,7 +24,6 @@ try:
 except:
     model = joblib.load("./fraud_detection.pkl")
 
-st.set_page_config(page_title="Fraud Detection System", page_icon="💳", layout="centered")
 st.title("💳 Real-Time Fraud Detection System")
 st.write("Predict whether a transaction is **Fraudulent or Genuine**")
 
