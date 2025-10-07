@@ -86,5 +86,5 @@ if st.button("Predict Fraud Status"):
         st.info(f"Fraud Probability: **{probability * 100:.2f}%**")
 
 st.markdown("---")
-st.caption("Developed by Kartika • Fraud Detection ML Model using Logistic Regression")
+
 
