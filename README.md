@@ -1,9 +1,13 @@
 # Fraud-Detection-System
 Predict whether a transaction is fraudulent or genuine using trained ML model.
 
-<img src="https://github.com/kartika28-ui/Fraud-Detection-System/blob/main/fraud-detection.png" width="700"/>
+<img src="https://github.com/kartika28-ui/Fraud-Detection-System/blob/main/fraud-detection.png" width="700"/> 
 
 ## Deployed Link: https://fraud-detection-kartika28-ui.streamlit.app/
+
+## Power BI Dashboard on Fraud Detection Analysis
+<img src="https://github.com/kartika28-ui/Fraud-Detection-System/blob/main/fraud-detection-dashboard.jpeg" width="700">
+
 ## Table of Contents
 
 - [Tech Stack](#tech-stack-)
